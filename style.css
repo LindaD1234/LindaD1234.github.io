@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Silkscreen');
+
+html {
+  font-size: 24px;
+  font-family: 'Silkscreen', monospace;
+  text-align: center;
+  background-color: #FFBDDB
+
+}
+
+body {  cursor: url('cursor1.png'), auto;
+}
+
+
+div.nav {
+  overflow: hidden;
+  display: block;
+  background-color: #A9ECA8
+  text-align: center;
+  padding: 14px 1px;
+  text-decoration: none;
+}
+.btn {
+            color: white;
+            background-color: #91C778;
+            height: 40px;
+            width: 90px;
+            padding: 2px;
+            border: 2px solid black;
+            text-decoration: none;
+}
+
+
+div.one {
+	font-size: 50px;
+	background-image: url("apple3.png");
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-size: cover
+}
+
+div.two {
+
+	.container {
+	  position: relative;
+	  width: 50%;
+	}
+
+	.image {
+	  display: block;
+	  width: 100%;
+	  height: auto;
+	}
+
+	.overlay {
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  height: 100%;
+	  width: 100%;
+	  opacity: 0;
+	  transition: .5s ease;
+	  background-color: #008CBA;
+	}
+
+	.container:hover .overlay {
+	  opacity: 1;
+	}
+
+	.text {
+	  color: white;
+	  font-size: 20px;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  -webkit-transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	  text-align: center;
+	}
+}
