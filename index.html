@@ -1,28 +1,31 @@
 
-      <!--how to make a hover under nav menu-->
-      <!--why the background image is gone-->
-      <!--why nav color does not change-->
-      <!--why no change applies to div one-->
 <!DOCTYPE html>
 <!-- Mainpage -->
     <head>
       <html lang="en" dir="ltr">
       <link rel="stylesheet" href="style.css">
       <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+
       <title>Dream Fast</title>
     </head>
 <!-- Web alt name -->
 <!-- Navigation -->
 <body>
     <div class ="nav">
-    <nav>
-
+    <ul>
+	  <nav>
       <a href="#home" class="btn">home</a>
       <a href="#film" class="btn">film</a>
       <a href="#about" class="btn">about</a>
-    </nav>
+	  <div class="logo" id="home">
+      <img src="logo.png" alt="Avatar" class="image"> 
+      </div>
+     </nav>
+    </ul>
     </div>
+
 
 <!--title-->
     <div class="one">
@@ -30,37 +33,104 @@
       <!--the home picture -->  
       <p>Dream Fast</p>
     </div>
+
+
     <div class="two">
+   
       <i>Make a film about a dream in 30min</i>
       <br><i>2023 til Present</i>
       <!--press comments--> 
-      <p>Astonishing, well-made, creative...</p>
-      <p>----<i>The New York Times</i></p>
+    </div>
+    <!--Press comment-->
+    <div class="title">
+      <p>Press Comments </p> </div>
+      <div class="two">
+        <p>"Astonishing, well-made, creative..."</p>
+        <p>----<i>The New York Times</i></p>
+  	  </div>
+  
 
+    
     <!--insert the film--> 
-    <div class="three">
+    <div class="title">
+      <p>Watch the film </p> </div>
+    <div>
     <section id="film">
       <video width="600" height="420" controls>
         <source src="30MFF.mp4" type="video/mp4">
         <source src="movie.ogg" type="video/ogg">
         Your browser does not support the video tag.
       </video>
+  	</div>
 
-    <div class="four" id="about">
-      
+    <!--Crew & Cast--> 
+    <div class="title">
+      <p>Crew & Cast </p> </div>
+    <div class="container" id="about">
+        <img src="maker.png" alt="Avatar" class="image">
+    	  <div class="overlay">
+        <div class="text">Linda likes making dream-related film.<br>She belives that one can only truly face their inner self in dreams
+        </div>
+    	</div>
+    </div>
 
-      <!--Schedule-->
-      <!--Partner--> 
-      <!--Endnotes--> 
+    
+    <div class="container" id="about">
+        <img src="actor.png" alt="Avatar" class="image">
+        <div class="overlay">
+        <div class="text">Aakif is an ward winning actor.<br>He is good at dreaming and pretending to dream
+          </div>
+        </div>
+      </div>
+
+    <!--Behind the scenes--> 
+    <div class="title">
+      <p>bts </p> </div>
+    <div class="slideshow-container">
+
+  <!-- Slide show of BTS -->
+    <div class="mySlides fade">
+      <div class="two">1 / 4</div>
+      <img src="dream1.jpeg" style="width:50%">
+      <div class="two">The dream starts with craving for food</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="two">2 / 4</div>
+      <img src="dream2.jpeg" style="width:50%">
+      <div class="two">Followed by a desire to enjoy nature</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="two">3 / 4</div>
+      <img src="night1.jpeg" style="width:50%">
+      <div class="two">But the dream is interuppted because of the approaching deadline</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="two">4 / 4</div>
+      <img src="night2.jpeg" style="width:50%">
+      <div class="two">And eventually turned into a nightmare</div>
+    </div>
+
+  <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+ 
 
 
 
+<div class="title">
+      <p>30min countdown </p> </div>
+		<div class="timer">
+      <script src="linda.js" defer></script>
+    </div>
 
 
 
-
-
-
-
+       
     </body>
   </html>
