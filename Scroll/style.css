@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+html{
+	height: 100%;
+	overflow-x: hidden;
+	font-family: 'Merriweather', sans-serif;
+}
+
+body{
+	height: 100%;
+	margin: 0px;
+}
+
+/* 
+Navigation Bar 
+*/
+#nav{
+	/* Fix navigation bar at the top middle of the web page */
+    position: fixed;
+    /* calc() CSS function calculates numbers of different units */
+    left: calc(50% - 50px);
+    top: 20px;
+    /* Display nav bar on top of everything else */
+    z-index: 1;
+}
+
+.nav-btn{
+	width: 20px;
+    height: 20px;
+    /* Make square div into a circle */
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid black;
+    display: inline-block;
+    cursor: pointer;
+    /* transition changes in background-color */
+    transition: background-color 0.5s;
+}
+
+/* When a nav-btn is hovered on, set background-color to black */
+.nav-btn:hover{
+	background-color: black;
+}
+
+/* 
+poet Div
+*/
+#poet-div{
+	/* Fix poet div in the bottom left corner of the web page */
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 300px;
+	text-align: center;
+}
+
+#poet{
+	width: 300px;
+	margin-top: 18px;
+}
+
+#poet-text{
+	color: white;
+	background-color: black;
+	font-size: 32px;
+}
+
+/* 
+Parallax: tile and palace sections;
+*/
+#tile, #palace, #beach, #end{
+	/* Set height of div to 100% */
+	height: 100%;
+	/* The bottom three background CSS settings create parallax effect */
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+#tile{
+	background-image: url('img/tile.jpeg');
+}
+
+#palace{
+	background-image: url('img/palace.jpeg');
+}
+
+#beach{
+	background-image: url('img/beach.jpeg');
+}
+
+#end{
+	background-image: url('img/tile.jpeg');
+}
+
+/* 
+silent div inside tile section
+*/
+
+#idea-bubble{
+	color: black;
+}
+
+#silent-div{
+    position: relative;
+    width: 150px;
+    text-align: center;
+    top: calc(57% - 300px);
+    left: calc(50% - 75px);
+}
+
+#silent{
+	width: 1000px;
+	margin-top: 10px;
+}
+
+
+
+#confuse-div{
+    position: relative;
+    width: 150px;
+    text-align: center;
+    top: calc(50% - 300px);
+    left: calc(50% - 75px);
+}
+
+#confuse{
+	width: 1000px;
+	margin-top: 10px;
+}
+
+#happy-div{
+    position: relative;
+    width: 150px;
+    text-align: center;
+    top: calc(52% - 300px);
+    left: calc(50% - 75px);
+}
+
+#happy{
+	width: 1000px;
+	margin-top: 10px;
+}
+
+#angry-div{
+    position: relative;
+    width: 150px;
+    text-align: center;
+    top: calc(60% - 300px);
+    left: calc(50% - 75px);
+}
+
+#angry{
+	width: 1000px;
+	margin-top: 10px;
+}
+
+
+
+.text-section{
+	/* Center text in the middle of browser using flexbox */
+	color: #7D7A7A;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.text{
+	width: 70%;
+}
